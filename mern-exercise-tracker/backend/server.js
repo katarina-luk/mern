@@ -20,10 +20,10 @@ connection.once('open', () => {
 })
 
 const exercisesRoutes = require('./routes/exercises');
-const usersRouts = require('./routes/users');
+const usersRoutes = require('./routes/users');
 
 app.use('/exercises',exercisesRoutes);
-app.use('./users',usersRouts);
+app.use('/users',usersRoutes);
 
 
 
